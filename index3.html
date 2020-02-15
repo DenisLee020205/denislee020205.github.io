@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            height: 100vh;
+            background-color:#8D2F5D ;
+            overflow: hidden;
+            margin: 0;
+        }
+        .navbar{
+            height: 100%;
+            flex-direction: column;
+            display: flex;
+        }
+        .item{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            color: white;
+            font-weight: bold;
+            font-size: 2em;
+            padding: .75em;
+            width:100% ;
+            transition: all ease .5s;
+            background-color: #AA4339;
+        }
+        .item:hover{
+            width: 200%;
+            background-color: #5D2971;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="item">О нас</div>
+        <div class="item">Галерея</div>
+        <div class="item">Контакты</div>
+    </div>
+</body>
+</html>
