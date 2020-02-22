@@ -3,70 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <style>
-        body{ margin:0; padding:0; background-color: #8BD3C5; display:flex; justify-content: center; align-items: center; height: 100vh; overflow-y: hidden;}
-        h1{color: #FF7C20;
-           font-family: leckerly, cursive;
-           font-size: 4em;
-           text-shadow: -2px 0 white, 0 2px white, 2px 0 white, 0 -2px white;
-           z-index: 100;
+        .bgimg{
+            background-image: url("img_parallax.jpg");
+            height: 100vh;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            opacity: 0.95;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
-        @font-face{
-            font-family: leckerly;
-            src: url("leckerli.ttf") format("opentype");
+        .bgimg-2{
+            background-image: url("img_parallax2.jpg");
+            height: 100vh;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            opacity: 0.95;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
         }
-        .flower-1 {
-background-image: url("flower1.png");
-background-size: cover;
-background-position: center;
-position: absolute;
-top: -150px;
+        body{
+            margin: 0px;
         }
-        .flower-2 {
-            background-image: url("flower2.png");
-background-size: cover;
-background-position: center;
-position: absolute;
-top: -150px;
+        .border{
+            padding: 4em;
+            background-color: white;
+            font-size: 2em;
         }
-        .flower-3 {
-            background-image: url("flower3.png");
-background-size: cover;
-background-position: center;
-position: absolute;
-top: -150px;
+        div p{
+            padding: 1.75em 1em;
+            margin: 0;
+            background-color: black;
+            color: white;
+            font-weight: 600;
+            font-size: 1.25em;
+            text-align: center;
         }
-        @keyframes falling{
-            to{
-                top: 100vh;
-                transform: rotate(729deg);
-            }
-        }
-        div:nth-of-type(1) {
-            left: 11vw;
-            width: 150px;
-            height: 150px;
-            animation: falling 12s 2.72s linear infinite;
-        }
+            
+        
     </style>
-    
 </head>
 <body>
-    <div class="flower-1"></div>
-    <div class="flower-1"></div>
-    <div class="flower-1"></div>
-    <div class="flower-2"></div>
-    <div class="flower-2"></div>
-    <div class="flower-2"></div>
-    <div class="flower-3"></div>
-    <div class="flower-3"></div>
-    <div class="flower-3"></div>
-    <h1>Spring is comming...</h1>
-    <a href='index1.html'>index1</a>
-    <a href='index2.html'>index2</a>
-    <a href='index3.html'>index3</a>
-    <a href='index4.html'>index4</a>
+    <div class="bgimg">
+        <div class="caption">
+            <span class="border">прокрути вниз</span>
+        </div>
+    </div>
+    <div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium enim maiores aspernatur quisquam? Quaerat quibusdam ipsam asperiores, excepturi nulla quidem alias explicabo deleniti consequuntur beatae enim repudiandae, non odio atque?</p>
+    </div>
+    <div class="bgimg-2">
+        <div class="caption"><span class="border">Это паралакс</span></div>
+    </div>
 </body>
 </html>

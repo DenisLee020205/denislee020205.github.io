@@ -5,44 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        body{
-            display: flex;
-            justify-content: flex-start;
-            align-items: center;
+        body {
             height: 100vh;
-            background-color:#8D2F5D ;
-            overflow: hidden;
-            margin: 0;
-        }
-        .navbar{
-            height: 100%;
-            flex-direction: column;
             display: flex;
-        }
-        .item{
-            display: flex;
-            align-items: center;
             justify-content: center;
-            height: 100%;
-            color: white;
-            font-weight: bold;
-            font-size: 2em;
-            padding: .75em;
-            width:100% ;
-            transition: all ease .5s;
-            background-color: #AA4339;
+            align-items: center;
         }
-        .item:hover{
-            width: 200%;
-            background-color: #5D2971;
+        circle {
+            fill: red;
+        }
+        svg {
+            width: 400px;
         }
     </style>
 </head>
 <body>
-    <div class="navbar">
-        <div class="item">О нас</div>
-        <div class="item">Галерея</div>
-        <div class="item">Контакты</div>
-    </div>
+    <svg viewbox="0 0 100 100">
+    <circle cx="50" cy="50" r="50"/>
+    </svg>
 </body>
 </html>
